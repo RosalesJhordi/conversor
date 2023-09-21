@@ -15,38 +15,43 @@ namespace AppTareas
 		{
 			InitializeComponent();
 		}
+
 		private void Convertir(object sender, EventArgs e)
 		{
 			string valor = entrada.Text;
-			double entra = Convert.ToInt32(valor);
-			opciones.SelectedIndexChanged += (s, args) =>
+			if (double.TryParse(valor, out double entra))
 			{
-				if (opciones.SelectedIndex != -1)
+				string selectedOption = opciones.Items[opciones.SelectedIndex];
+				string resultMessage = string.Empty;
+
+				switch (selectedOption)
 				{
-					string selectedOption = opciones.Items[opciones.SelectedIndex];
-					if (selectedOption == "Peso")
-					{
+					case "Peso":
 						double libras = entra * 2.20462;
-						DisplayAlert("Conversión", $"{entra} Kilos en libras son : {libras} libras", "Aceptar");
-					}
-					else if (selectedOption == "Volumen")
-					{
+						resultMessage = $"{entra} Kilos en libras son: {libras} libras";
+						break;
+
+					case "Volumen":
 						double galones = entra / 3.78541;
-						DisplayAlert("Conversión", $"{entra} litros en galones son : {galones} galones", "Aceptar");
+						resultMessage = $"{entra} litros en galones son: {galones} galones";
+						break;
 
-					}
-					else if (selectedOption == "Temperatura")
-					{
+					case "Temperatura":
 						double grados = (entra * 9 / 5) + 32;
-						DisplayAlert("Conversión", $"{entra} grados C° en grados F° son : {grados} centigrados", "Aceptar");
-					}
-					else
-					{
-						DisplayAlert("Error", $"Hubo un error", "Aceptar");
-					}
-				}
-			};
-		}
+						resultMessage = $"{entra} grados C° en grados F° son: {grados} grados F°";
+						break;
 
+					default:
+						resultMessage = "Seleccione una opción válida.";
+						break;
+				}
+
+				DisplayAlert("Conversión", resultMessage, "Aceptar");
+			}
+			else
+			{
+				DisplayAlert("Error", "Ingrese un valor numérico válido.", "Aceptar");
+			}
+		}
 	}
 }
