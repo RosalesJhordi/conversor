@@ -1,0 +1,15 @@
+C:\Xamarin2\AppTareas\AppTareas\bin\Debug\netstandard2.0\AppTareas.deps.json
+C:\Xamarin2\AppTareas\AppTareas\bin\Debug\netstandard2.0\AppTareas.dll
+C:\Xamarin2\AppTareas\AppTareas\bin\Debug\netstandard2.0\ref\AppTareas.dll
+C:\Xamarin2\AppTareas\AppTareas\bin\Debug\netstandard2.0\AppTareas.pdb
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.csproj.AssemblyReference.cache
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.AssemblyInfoInputs.cache
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.AssemblyInfo.cs
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.csproj.CoreCompileInputs.cache
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.dll
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\refint\AppTareas.dll
+C:\Xamarin2\AppTareas\AppTareas\obj\Debug\netstandard2.0\AppTareas.pdb
